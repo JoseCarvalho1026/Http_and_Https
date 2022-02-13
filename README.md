@@ -9,7 +9,7 @@
 
 ◻️ `nano example.conf` change certificate names (see certificates) ;
 
-Para a instalação dos certificados deve instalar "easy-rsa" [Certificates_Installation](https://github.com/JoseCarvalho1026/Certificates_Installation).
+To install the certificates, you must install "easy-rsa" [Certificates_Installation](https://github.com/JoseCarvalho1026/Certificates_Installation).
 
 ◻️ `cd ../sites-available/` ;
 
