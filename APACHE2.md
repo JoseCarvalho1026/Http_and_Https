@@ -1,6 +1,7 @@
 # APACHE2
+◻️ `apt update -y && apt upgrade -y` ;
 
-◻️ `apt install apache2` ;
+◻️ `apt install apache2 -y` ;
 
 ◻️ `a2enmod ssl` ;
 
