@@ -8,7 +8,7 @@
 
 To install the certificates, you must install "easy-rsa" [Certificates_Installation](https://github.com/JoseCarvalho1026/Certificates_Installation).
 
-After installation and configuration do `./easyrsa build-server-full example.example.com nopass` and copy the "*.crt" and "*.key" to the respective places;
+After the installation and configuration do `./easyrsa build-server-full example.example.com nopass` and copy the "*.crt" and "*.key" to the respective places;
 
 ```
 example.example.com.crt file in /etc/pki/tls/certs
@@ -18,7 +18,7 @@ example.example.com.key file in /etc/pki/tls/private
 
 ◻️ `nano /etc/httpd/conf.d/ssl.conf` ;
 
-Uncomment and replace the document root and edit name server:
+Uncomment, replace the document root, and edit name server:
 ```
 <VirtualHost _default_:443>
 
