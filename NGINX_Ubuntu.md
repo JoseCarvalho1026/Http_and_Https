@@ -13,7 +13,7 @@
 
 To install the certificates, you must install "easy-rsa" [Certificates_Installation](https://github.com/JoseCarvalho1026/Certificates_Installation).
 
-After installation and configuration do `./easyrsa build-server-full example.com nopass` and copy the "*.crt" and "*.key" to the respective places;
+After installation and configuration do `./easyrsa build-server-full example.example.com nopass` and copy the "*.crt" and "*.key" to the respective places;
 
 ◻️ `cd ../sites-available/` ;
 
