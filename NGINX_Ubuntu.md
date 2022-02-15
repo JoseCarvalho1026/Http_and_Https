@@ -15,7 +15,7 @@ To install the certificates, you must install "easy-rsa" [Certificates_Installat
 
 After the installation and configuration do `./easyrsa build-server-full example.example.com nopass` and copy the "*.crt" and "*.key" to the respective places.
 
-Para aceder à internet, é necessário a configuração das portas do [Iptables](https://github.com/JoseCarvalho1026/Iptables/blob/main/Ubuntu.md).
+To access the internet, it is necessary the configuration of the ports of the [Iptables](https://github.com/JoseCarvalho1026/Iptables/blob/main/Ubuntu.md).
 
 ◻️ `cd ../sites-available/` ;
 
