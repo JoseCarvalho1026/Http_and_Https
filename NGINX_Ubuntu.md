@@ -7,13 +7,13 @@
 
 ◻️ `cd /etc/nginx/snippets/` ;
 
-◻️ `cp snakeoil.conf example.conf` ;
+◻️ `cp snakeoil.conf www.inova.pt.conf` ;
 
-◻️ `nano example.conf` change certificate names (see certificates) ;
+◻️ `nano www.inova.pt.conf` change certificate names (see certificates) ;
 
 To install the certificates, you must install "easy-rsa" [Certificates_Installation](https://github.com/JoseCarvalho1026/Certificates_Installation).
 
-After the installation and configuration do `./easyrsa build-server-full example.example.com nopass` and copy the "*.crt" and "*.key" to the respective places.
+After the installation and configuration do `./easyrsa build-server-full www.inova.pt nopass` and copy the "*.crt" and "*.key" to the respective places.
 
 To access the internet, it is necessary the configuration of the ports of the [Iptables](https://github.com/JoseCarvalho1026/Iptables/blob/main/Ubuntu.md).
 
