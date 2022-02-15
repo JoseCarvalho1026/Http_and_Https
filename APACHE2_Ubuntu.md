@@ -18,6 +18,8 @@ In order to install the certificates, you must install "easy-rsa" [Certificates_
 
 After the installation and the configuration type `./easyrsa build-server-full example.com nopass` and copy the "*.crt" and "*.key" to the respective places;
 
+Para que consiga aceder à internet, é necessário a configuração das portas do [Iptables](https://github.com/JoseCarvalho1026/Iptables/blob/main/Ubuntu.md)
+
 ◻️ `cd /var/www/` ;
 
 ◻️ `cp -r html/ htmls` ;
