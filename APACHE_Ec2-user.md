@@ -2,17 +2,17 @@
 
 ◻️ `yum install httpd -y` "apache" installation ;
 
-◻️ `yum install mod_ssl -y` "ssl" installation;
+◻️ `yum install mod_ssl -y` "ssl" installation ;
 
 ◻️ `ln -s /etc/pki/tls/private private` creating a "soft link" from `/etc/ssl` pointing to `/etc/pki/tls/private` ;
 
 To install the certificates, you must install "easy-rsa" [Certificates_Installation](https://github.com/JoseCarvalho1026/Certificates_Installation).
 
-After the installation and configuration do `./easyrsa build-server-full example.example.com nopass` and copy the "*.crt" and "*.key" to the respective places;
+After the installation and configuration do `./easyrsa build-server-full www.enta.pt nopass` and copy the "*.crt" and "*.key" to the respective places;
 
 ```
-example.example.com.crt file in /etc/pki/tls/certs
-example.example.com.key file in /etc/pki/tls/private
+www.enta.pt.crt file in /etc/pki/tls/certs
+www.enta.pt.key file in /etc/pki/tls/private
 ```
 ◻️ `cp -r /var/www/html /var/www/htmls` copy folder "html" to "htmls";
 
@@ -24,7 +24,7 @@ Uncomment, replace the document root, and edit name server:
 
 # General setup for the virtual host, inherited from global configuration
 DocumentRoot "/var/www/htmls"
-ServerName example.example.com:443
+ServerName www.enta.pt:443
 ```
 Comment this following lines;
 ```
@@ -33,8 +33,8 @@ Comment this following lines;
 ```
 Then edit the certificates:
 ```
-SSLCertificateFile /etc/pki/tls/certs/example.example.com.crt
-SSLCertificateKeyFile /etc/pki/tls/private/example.example.com.key
+SSLCertificateFile /etc/pki/tls/certs/www.enta.pt.crt
+SSLCertificateKeyFile /etc/pki/tls/private/www.enta.pt.key
 ```
 ◻️ `systemctl restart httpd` restart httpd ;
 
